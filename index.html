@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#6c5ce7">
+  <link rel="manifest" href="manifest.json" />
+  <title>VerseCraft</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>VerseCraft</h1>
+    <p class="subtitle">Write what stirs. Shape what flows.</p>
+  </header>
+
+  <main>
+    <section id="theme-selector">
+      <label for="theme">Choose a theme:</label>
+      <select id="theme">
+        <option value="dreamy">Dreamy</option>
+        <option value="dark">Dark</option>
+        <option value="hopeful">Hopeful</option>
+        <option value="void">Void</option>
+        <option value="fire">Fire</option>
+      </select>
+    </section>
+
+    <section id="editor-section">
+      <textarea id="verse-input" placeholder="Write your verse here..."></textarea>
+      <div id="feedback"></div>
+    </section>
+
+    <section id="save-section">
+      <button id="save-btn">Save to Songbook</button>
+    </section>
+
+    <section id="songbook">
+      <h2>Your Songbook</h2>
+      <ul id="saved-verses"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
